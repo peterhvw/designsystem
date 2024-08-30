@@ -1,0 +1,505 @@
+
+$red-100: #f0e0e0;
+$red-200: #d9b3b3;
+$red-300: #c28686;
+$red-400: #ab5959;
+$red-500: #943c3c;
+$red-600: #7d2f2f;
+$red-700: #662222;
+$red-800: #4f1515;
+$red-900: #380808;
+
+$blue-100: #e0e8f0;
+$blue-200: #b3c6d9;
+$blue-300: #86a4c2;
+$blue-400: #5982ab;
+$blue-500: #3c6094;
+$blue-600: #2f4e7d;
+$blue-700: #223c66;
+$blue-800: #152a4f;
+$blue-900: #081838;
+
+$green-100: #e0f0e8;
+$green-200: #b3d9c6;
+$green-300: #86c2a4;
+$green-400: #59ab82;
+$green-500: #3c9460;
+$green-600: #2f7d4e;
+$green-700: #22663c;
+$green-800: #154f2a;
+$green-900: #083818;
+
+// Semantic Color Tokens
+$color-primary: $blue-500;
+$color-primary-light: $blue-300;
+$color-primary-dark: $blue-700;
+
+$color-secondary: $green-500;
+$color-secondary-light: $green-300;
+$color-secondary-dark: $green-700;
+
+$color-tertiary: $red-500;
+$color-tertiary-light: $red-300;
+$color-tertiary-dark: $red-700;
+
+$color-font: #333333;
+$color-font-light: #666666;
+$color-font-dark: #000000;
+
+$color-background: #ffffff;
+$color-background-light: #f5f5f5;
+$color-background-dark: #e0e0e0;
+
+
+// Spacing Tokens (8px grid)
+$space-xxs: 8px;
+$space-xs: 16px;
+$space-s: 24px;
+$space-m: 32px;
+$space-l: 40px;
+$space-xl: 48px;
+$space-xxl: 56px;
+$space-xxxl: 64px;
+
+// Line Height Tokens
+$line-height-tight: 1.2;
+$line-height-normal: 1.5;
+$line-height-relaxed: 1.8;
+$line-height-loose: 2;
+// Font Size Tokens
+$font-size-xs: 0.75rem;    // 12px
+$font-size-sm: 0.875rem;   // 14px
+$font-size-md: 1rem;       // 16px
+$font-size-lg: 1.125rem;   // 18px
+$font-size-xl: 1.25rem;    // 20px
+$font-size-2xl: 1.5rem;    // 24px
+$font-size-3xl: 1.875rem;  // 30px
+$font-size-4xl: 2.25rem;   // 36px
+$font-size-5xl: 3rem;      // 48px
+$font-size-default: $font-size-sm;
+$line-height-default: $line-height-normal;
+
+// Border Color Token
+$color-border: #cccccc;
+
+ 
+// Border Radius Tokens
+$border-radius-none: 0;
+$border-radius-sm: 0.125rem;   // 2px
+$border-radius-md: 0.25rem;    // 4px
+$border-radius-lg: 0.5rem;     // 8px
+$border-radius-xl: 1rem;       // 16px
+$border-radius-full: 9999px;   // Fully rounded
+
+
+:root {
+  --color-border: #{$color-border};
+  // Border Radius Variables
+  --border-radius-none: #{$border-radius-none};
+  --border-radius-sm: #{$border-radius-sm};
+  --border-radius-md: #{$border-radius-md};
+  --border-radius-lg: #{$border-radius-lg};
+  --border-radius-xl: #{$border-radius-xl};
+  --border-radius-full: #{$border-radius-full};
+  // Color Variables
+  --red-100: #{$red-100};
+  --red-200: #{$red-200};
+  --red-300: #{$red-300};
+  --red-400: #{$red-400};
+  --red-500: #{$red-500};
+  --red-600: #{$red-600};
+  --red-700: #{$red-700};
+  --red-800: #{$red-800};
+  --red-900: #{$red-900};
+
+  --blue-100: #{$blue-100};
+  --blue-200: #{$blue-200};
+  --blue-300: #{$blue-300};
+  --blue-400: #{$blue-400};
+  --blue-500: #{$blue-500};
+  --blue-600: #{$blue-600};
+  --blue-700: #{$blue-700};
+  --blue-800: #{$blue-800};
+  --blue-900: #{$blue-900};
+
+  --green-100: #{$green-100};
+  --green-200: #{$green-200};
+  --green-300: #{$green-300};
+  --green-400: #{$green-400};
+  --green-500: #{$green-500};
+  --green-600: #{$green-600};
+  --green-700: #{$green-700};
+  --green-800: #{$green-800};
+  --green-900: #{$green-900};
+
+  // Semantic Color Variables
+  --color-primary: #{$color-primary};
+  --color-secondary: #{$color-secondary};
+  --color-tertiary: #{$color-tertiary};
+  --color-font: #{$color-font};
+  --color-background: #{$color-background};
+
+  // Spacing Variables
+  --space-xxs: #{$space-xxs};
+  --space-xs: #{$space-xs};
+  --space-s: #{$space-s};
+  --space-m: #{$space-m};
+  --space-l: #{$space-l};
+  --space-xl: #{$space-xl};
+  --space-xxl: #{$space-xxl};
+  --space-xxxl: #{$space-xxxl};
+
+  // Line Height Variables
+  --line-height-tight: #{$line-height-tight};
+  --line-height-normal: #{$line-height-normal};
+  --line-height-relaxed: #{$line-height-relaxed};
+  --line-height-loose: #{$line-height-loose};
+  --line-height-default: #{$line-height-default};
+
+  // Border Variables
+  --border-width-default: 1px;
+  --border-style-default: solid;
+  --border-color-default: var(--gray-300);
+  --border-radius-default: 4px;
+
+  // Composite Border Token
+  --border-default: var(--border-width-default) var(--border-style-default) var(--border-color-default);
+  
+  // Font Size Variables
+  --font-size-xs: #{$font-size-xs};
+  --font-size-sm: #{$font-size-sm};
+  --font-size-md: #{$font-size-md};
+  --font-size-lg: #{$font-size-lg};
+  --font-size-xl: #{$font-size-xl};
+  --font-size-2xl: #{$font-size-2xl};
+  --font-size-3xl: #{$font-size-3xl};
+  --font-size-4xl: #{$font-size-4xl};
+  --font-size-5xl: #{$font-size-5xl};
+  --font-size-default: #{$font-size-default};
+
+  // Additional Color Variables
+  --color-primary-light: #{$color-primary-light};
+  --color-primary-dark: #{$color-primary-dark};
+  --color-secondary-light: #{$color-secondary-light};
+  --color-secondary-dark: #{$color-secondary-dark};
+  --color-tertiary-light: #{$color-tertiary-light};
+  --color-tertiary-dark: #{$color-tertiary-dark};
+  --color-font-light: #{$color-font-light};
+  --color-font-dark: #{$color-font-dark};
+  --color-background-light: #{$color-background-light};
+  --color-background-dark: #{$color-background-dark};
+  
+}
+
+@mixin button(
+  $color: $color-primary,
+  $size: normal,
+  $variant: contained,
+  $full-width: false
+) {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-family-default);
+  font-weight: var(--font-weight-medium);
+  text-decoration: none;
+  border: none;
+  border-radius: var(--border-radius-default);
+  cursor: pointer;
+  transition: all 0.3s ease;
+
+  @if $size == small {
+    font-size: var(--font-size-sm);
+    padding: 0 var(--space-xs);
+    height: 32px;
+  } @else {
+    font-size: var(--font-size-md);
+    padding: 0 var(--space-s);
+    height: 40px;
+  }
+
+  @if $full-width {
+    width: 100%;
+  }
+
+  @if $variant == contained {
+    background-color: $color;
+    color: var(--color-background);
+
+    &:hover {
+      background-color: darken($color, 10%);
+    }
+  } @else if $variant == outline {
+    background-color: var(--color-background);
+    color: $color;
+    border: var(--border-width-default) solid $color;
+
+    &:hover {
+      background-color: rgba($color, 0.1);
+    }
+  } @else if $variant == text {
+    background-color: transparent;
+    color: $color;
+
+    &:hover {
+      background-color: rgba($color, 0.1);
+    }
+  }
+}
+
+.primaryButton {
+  @include button($color: $color-primary);
+}
+
+.primarySmallButton {
+  @include button($color: $color-primary, $size: small);
+}
+
+.primaryOutlineButton {
+  @include button($color: $color-primary, $variant: outline);
+}
+
+.primaryTextButton {
+  @include button($color: $color-primary, $variant: text);
+}
+
+.primaryFullWidthButton {
+  @include button($color: $color-primary, $full-width: true);
+}
+
+.secondaryButton {
+  @include button($color: $color-secondary);
+}
+
+.secondarySmallButton {
+  @include button($color: $color-secondary, $size: small);
+}
+
+.secondaryOutlineButton {
+  @include button($color: $color-secondary, $variant: outline);
+}
+
+.secondaryTextButton {
+  @include button($color: $color-secondary, $variant: text);
+}
+
+.secondaryFullWidthButton {
+  @include button($color: $color-secondary, $full-width: true);
+}
+
+.tertiaryButton {
+  @include button($color: $color-tertiary);
+}
+
+.tertiarySmallButton {
+  @include button($color: $color-tertiary, $size: small);
+}
+
+.tertiaryOutlineButton {
+  @include button($color: $color-tertiary, $variant: outline);
+}
+
+.tertiaryTextButton {
+  @include button($color: $color-tertiary, $variant: text);
+}
+
+.tertiaryFullWidthButton {
+  @include button($color: $color-tertiary, $full-width: true);
+}
+
+
+
+// Icon mixin
+@mixin icon($size: medium, $color: black) {
+  $sizes: (
+    small: $space-xs,
+    medium: $space-s,
+    large: $space-m
+  );
+
+  $colors: (
+    premium: $color-primary,
+    secondary: $color-secondary,
+    tertiary: $color-tertiary,
+    black: $color-font-dark,
+    white: $color-background
+  );
+
+  width: map-get($sizes, $size);
+  height: map-get($sizes, $size);
+  fill: map-get($colors, $color);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: $space-xxs;
+  vertical-align: middle;
+}
+
+// Icon classes
+.icon-small {
+  @include icon($size: small);
+}
+
+.icon-medium {
+  @include icon($size: medium);
+}
+
+.icon-large {
+  @include icon($size: large);
+}
+
+.icon-premium {
+  @include icon($color: premium);
+}
+
+.icon-secondary {
+  @include icon($color: secondary);
+}
+
+.icon-tertiary {
+  @include icon($color: tertiary);
+}
+
+.icon-black {
+  @include icon($color: black);
+}
+
+.icon-white {
+  @include icon($color: white);
+}
+
+// Input mixin
+@mixin input(
+  $has-border: true,
+  $size: normal,
+  $left-icon: false,
+  $right-icon: false
+) {
+  $height-small: 32px;
+  $height-normal: 40px;
+
+  .inputContainer {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    width: 100%;
+    min-width: 250px;
+    height: if($size == small, $height-small, $height-normal);
+  }
+
+  .input {
+    width: 100%;
+    height: 100%;
+    padding: 0 if($size == small, $space-xs, $space-s);
+    font-size: if($size == small, $font-size-sm, $font-size-md);
+    line-height: 1;
+    color: $color-font-dark;
+    background-color: $color-background-light;
+    transition: all 0.3s ease;
+    border: 1px solid $color-border;
+    border-radius: $border-radius-md;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+    &:focus {
+      outline: none;
+      border-color: $color-primary;
+      box-shadow: 0 0 0 3px rgba($color-primary, 0.25);
+    }
+
+    @if $left-icon {
+      padding-left: if($size == small, 2.5 * $space-xs, 2.5 * $space-s);
+    }
+
+    @if $right-icon {
+      padding-right: if($size == small, 2.5 * $space-xs, 2.5 * $space-s);
+    }
+  }
+
+  .inputIcon {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: if($size == small, $font-size-sm, $font-size-md);
+    height: if($size == small, $font-size-sm, $font-size-md);
+    pointer-events: none;
+
+    &:first-child {
+      left: if($size == small, $space-xs, $space-s);
+    }
+
+    &:last-child {
+      right: if($size == small, $space-xs, $space-s);
+    }
+  }
+}
+
+// Input variations
+.inputDefault {
+  @include input();
+}
+
+.inputSmall {
+  @include input($size: small);
+}
+
+.inputNoBorder {
+  @include input($has-border: false);
+}
+
+.inputWithLeftIcon {
+  @include input($left-icon: true);
+}
+
+.inputWithRightIcon {
+  @include input($right-icon: true);
+}
+
+.inputWithBothIcons {
+  @include input($left-icon: true, $right-icon: true);
+}
+
+.inputSmallWithLeftIcon {
+  @include input($size: small, $left-icon: true);
+}
+
+.inputSmallWithRightIcon {
+  @include input($size: small, $right-icon: true);
+}
+
+.inputSmallWithBothIcons {
+  @include input($size: small, $left-icon: true, $right-icon: true);
+}
+
+.inputWrapper {
+  margin-bottom: var(--space-s);
+  width: 100%;
+  max-width: 300px;
+
+  input {
+    width: 100%;
+  }
+}
+
+
+
+// Button with icon styles
+button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  img {
+    margin-left: $space-xxs;
+  }
+}
+
+
+body,
+html {
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: $color-background-light;
+  font-size: $font-size-default;
+  line-height: $line-height-default;
+}
