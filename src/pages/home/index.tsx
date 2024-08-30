@@ -154,7 +154,7 @@ const Home: FC = function () {
             </div>
           </div>
 
-          <div className={styles.buttonShowcase}>
+          <div className={`${styles.inputWrapper} ${styles.inputDefault}`}>
             {/* Default Input */}
             <div className={styles.inputWrapper}>
               <div className={styles.inputContainer}>
